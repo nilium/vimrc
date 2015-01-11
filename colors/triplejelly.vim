@@ -358,7 +358,7 @@ call s:X("Comment",g:triplejelly_c_comment,"","none","Grey","")
 call s:X("Todo","FF9F00","","none","White",s:termBlack)
 
 call s:X("StatusLine",g:triplejelly_background_color,"3EB2FC","none","","White")
-call s:X("StatusLineNC","ffffff","a6a6a6","none","White","Black")
+call s:X("StatusLineNC","757575","212121","none","Grey","DarkGrey")
 call s:X("VertSplit","","a6a6a6","",s:termBlack,s:termBlack)
 call s:X("WildMenu","f0a0c0","302028","","Magenta","")
 
@@ -557,7 +557,7 @@ end
 " Manual overrides for 256-color terminals. Dark colors auto-map badly.
 " TODO: Port from jellybeans
 if !s:low_color
-  hi StatusLineNC ctermbg=236
+  hi StatusLineNC ctermbg=232 ctermfg=244
   hi Folded ctermbg=237
   hi FoldColumn ctermbg=237
   hi SignColumn ctermbg=237

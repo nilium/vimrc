@@ -3,14 +3,14 @@
 "
 
 " Visual mode
-let s:V1 = [ '#0087ff' , '#ffffff','33','231']
+let s:V1 = [ '#0087ff' , '#fdfdfd','33','231']
 let s:V2 = [ '#005faf' , '#5fafff','25','75']
 let s:V3 = [ '#87d7ff' , '#005faf','117','25']
 
 " Replace mode
-let s:R1 = [ '#d75fff' , '#ffffff','53','231']
-let s:R2 = [ '#5f005f' , '#d75fff','53','171']
-let s:R3 = [ '#ff87ff' , '#8700af','219','52']
+let s:R1 = [ '#5f005f' , '#fdfdfd','53','231']
+let s:R2 = [ '#5f005f' , '#df5fff','53','171']
+let s:R3 = [ '#ffafff' , '#5f0000','219','52']
 
 let g:airline#themes#tripoly#palette = {}
 
@@ -26,15 +26,15 @@ function! airline#themes#tripoly#refresh()
   let s:I3 = s:StatusLine
 
   " Normal mode
-  let s:N1 = [ '#00005f' , '#af00d7','233','45']
-  let s:N2 = [ '#afd700' , '#005f00','233','25']
+  let s:N1 = ['#121212', '#00dfff','233','45']
+  let s:N2 = ['#121212' , '#0087ff' , '233','33']
   let s:N3 = s:StatusLine
 
   " Tabline Plugin
   let g:airline#themes#tripoly#palette.tabline = {
-        \ 'airline_tab':    ['#bcbcbc', '#005f00','51','23'],
-        \ 'airline_tabsel': ['#232323', '#22A6C1','234','39'],
-        \ 'airline_tabtype':['#afd700', '#204d20','148','22'],
+        \ 'airline_tab':    ['#fdfdfd', '#262626','231','23'],
+        \ 'airline_tabsel': ['#121212', '#00afff','233','39'],
+        \ 'airline_tabtype':['#d0d0d0', '#262626','252','235'],
         \ 'airline_tabfill': s:StatusLine,
         \ 'airline_tabhid': ['#c5c5c5', '#404042','251','238'],
         \ 'airline_tabmod': ['#FFA943', '#57131F','221','52'],
@@ -48,9 +48,13 @@ function! airline#themes#tripoly#refresh()
 
   " Inactive Mode
   let s:IA = airline#themes#get_highlight('StatusLineNC')
-  let g:airline#themes#tripoly#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
+  let g:airline#themes#tripoly#palette.inactive = airline#themes#generate_color_map(
+        \ ['#bcbcbc','#333333','250','236'],
+        \ ['#bcbcbc','#252525','250','235'],
+        \ ['#bcbcbc','#1e1e1e','250','234']
+        \ )
   let g:airline#themes#tripoly#palette.inactive_modified = {
-        \ 'airline_c':  ['#d7ff00', s:IA[1],'190',s:IA[3]],
+        \ 'airline_c':  ['#ff8700', '#3f1818','208','234'],
         \ }
 
 endfunction
@@ -62,7 +66,7 @@ if !get(g:, 'loaded_ctrlp', 0)
 endif
 let g:airline#themes#tripoly#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
       \ s:StatusLine,
-      \ ['#afd700', '#005f00','148','22'],
-      \ [ '#005f00' , '#afd700' , '22','148']
+      \ ['#121212', '#00dfff','233','45'],
+      \ [ '#121212' , '#0087ff' , '233','33']
       \)
 

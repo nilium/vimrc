@@ -79,3 +79,6 @@
 [submodule "bundle/asciidoc-vim"]
 	path = bundle/asciidoc-vim
 	url = git@github.com:dagwieers/asciidoc-vim
+[submodule "bundle/vim-bufferline"]
+	path = bundle/vim-bufferline
+	url = git@github.com:bling/vim-bufferline.git
