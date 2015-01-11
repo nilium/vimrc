@@ -49,9 +49,9 @@ function! airline#themes#tripoly#refresh()
   " Inactive Mode
   let s:IA = airline#themes#get_highlight('StatusLineNC')
   let g:airline#themes#tripoly#palette.inactive = airline#themes#generate_color_map(
-        \ ['#bcbcbc','#333333','250','236'],
-        \ ['#bcbcbc','#252525','250','235'],
-        \ ['#bcbcbc','#1e1e1e','250','234']
+        \ ['#bcbcbc','#3a3a3a','250','237'],
+        \ ['#bcbcbc','#323232','250','236'],
+        \ ['#bcbcbc','#282828','250','235']
         \ )
   let g:airline#themes#tripoly#palette.inactive_modified = {
         \ 'airline_c':  ['#ff8700', '#3f1818','208','234'],
