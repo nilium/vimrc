@@ -1,0 +1,12 @@
+vimrc
+=====
+
+This is my personal vimrc and a collection of bundles it uses. It also
+includes pathogen.vim because, really, it's the only simple bundle
+script I could think to use (alternatives aren't all that great).
+
+Nothing to really see here that's special.
+
+
+// vim: set syntax=asciidoc:
+

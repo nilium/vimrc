@@ -76,3 +76,6 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
+[submodule "bundle/asciidoc-vim"]
+	path = bundle/asciidoc-vim
+	url = git@github.com:dagwieers/asciidoc-vim
