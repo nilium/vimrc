@@ -8,5 +8,18 @@ script I could think to use (alternatives aren't all that great).
 Nothing to really see here that's special.
 
 
+Installation
+------------
+
+To install this, check this repository out into '$HOME/.vim' and then
+source ''$HOME/.vim/vimrc' from '$HOME/.vimrc'.
+
+This is intended to keep the vim files fairly isolated and ensure that
+'$HOME/.vimrc' can be used to set machine-specific things.
+
+I should probably also add something to swap out the use of Esc keys,
+but that's not a priority.
+
+
 // vim: set syntax=asciidoc:
 
