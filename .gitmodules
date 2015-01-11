@@ -1,0 +1,75 @@
+[submodule "bundle/CamelCaseMotion"]
+	path = bundle/CamelCaseMotion
+	url = git@github.com:bkad/CamelCaseMotion
+[submodule "bundle/colorizer"]
+	path = bundle/colorizer
+	url = git@github.com:lilydjwg/colorizer.git
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = git@github.com:sjl/gundo.vim
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter
+[submodule "bundle/rainbow_parentheses.vim"]
+	path = bundle/rainbow_parentheses.vim
+	url = git@github.com:kien/rainbow_parentheses.vim
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git@github.com:ervandew/supertab
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule "bundle/tabline.vim"]
+	path = bundle/tabline.vim
+	url = git@github.com:mkitt/tabline.vim.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git@github.com:godlygeek/tabular
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:majutsushi/tagbar
+[submodule "bundle/tmuxline.vim"]
+	path = bundle/tmuxline.vim
+	url = git@github.com:edkolev/tmuxline.vim.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule "bundle/vim-bbye"]
+	path = bundle/vim-bbye
+	url = git@github.com:moll/vim-bbye.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = git@github.com:Lokaltog/vim-easymotion
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = git@github.com:nathanaelkane/vim-indent-guides.git
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git@github.com:tpope/vim-surround
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = git@github.com:tpope/vim-unimpaired
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = git@github.com:Shougo/vimproc.vim.git
+[submodule "bundle/xterm-color-table.vim"]
+	path = bundle/xterm-color-table.vim
+	url = git@github.com:guns/xterm-color-table.vim.git
+[submodule "bundle/YankRing.vim"]
+	path = bundle/YankRing.vim
+	url = git@github.com:vim-scripts/YankRing.vim
+[submodule "bundle/Smart-Tabs"]
+	path = bundle/Smart-Tabs
+	url = git@github.com:vim-scripts/Smart-Tabs.git
