@@ -73,3 +73,6 @@
 [submodule "bundle/Smart-Tabs"]
 	path = bundle/Smart-Tabs
 	url = git@github.com:vim-scripts/Smart-Tabs.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git@github.com:Raimondi/delimitMate.git
