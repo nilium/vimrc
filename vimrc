@@ -3,7 +3,7 @@
 "
 
 " Timeouts
-set timeoutlen=350
+set timeout ttimeout timeoutlen=300 ttimeoutlen=0
 set noesckeys
 
 " Persistent undo
