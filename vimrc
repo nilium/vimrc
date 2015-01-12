@@ -44,8 +44,10 @@ set backspace=indent,eol,start
 " Wrapping
 set nowrap
 set linebreak
-set breakindent
 let &showbreak='↳ '
+if has('breakindent')
+        set breakindent
+endif
 
 " Indentation
 set autoindent
@@ -64,7 +66,11 @@ set number
 set mouse=a
 
 " Encryption -- use blowfish2
-set cryptmethod=blowfish2
+if has('patch-7.4.399')
+        set cryptmethod=blowfish2
+else
+        set cryptmethod=blowfish
+endif
 
 " Colors / UI-specific things
 set wildmenu
