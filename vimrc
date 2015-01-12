@@ -2,6 +2,9 @@
 " Settings
 "
 
+" Stick disabled plugins here.
+let g:pathogen_disabled = ["supertab"]
+
 " Timeouts
 set timeout ttimeout timeoutlen=300 ttimeoutlen=0
 set noesckeys
