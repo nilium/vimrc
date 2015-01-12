@@ -12,6 +12,7 @@ nnoremap <Leader>sr :set relativenumber!<CR>
 " Bind ss to show the mappings for s mode toggles.
 " Will likely remove this once it's muscle memory.
 nnoremap <Leader>ss :nnoremap <Leader>s<CR>
+nnoremap <Leader>so :ZoomToggle<CR>
 
 " pbpaste / copy
 nnoremap <silent> <Leader>P :.!pbpaste<CR>
