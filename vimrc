@@ -150,6 +150,9 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplete#close_popup()
 inoremap <expr><C-e>  neocomplete#cancel_popup()
+ 
+" ack.vim
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Load mappings
 source $HOME/.vim/mappings.vim

@@ -6,6 +6,9 @@ reason they're in there, in an attempt to make sure I remember why they're
 there in the future.
 
 
+ack.vim ::
+        For ':Ack', since I use ack rather heavily. Configured to use ag for
+        performance reasons.
 asciidoc-vim ::
         AsciiDoc syntax highlighting.
 CamelCaseMotion ::
