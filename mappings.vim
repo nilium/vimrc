@@ -6,16 +6,18 @@
 let mapleader = ','
 
 " Useful editing mode toggles.
-nnoremap <Leader>sl :set list!<CR>
-nnoremap <Leader>sw :set wrap!<CR>
-nnoremap <Leader>sr :set relativenumber!<CR>
+nnoremap <silent> <Leader>sl :set list!<CR>
+nnoremap <silent> <Leader>sw :set wrap!<CR>
+nnoremap <silent> <Leader>sr :set relativenumber!<CR>
 " Bind ss to show the mappings for s mode toggles.
 " Will likely remove this once it's muscle memory.
-nnoremap <Leader>ss :nnoremap <Leader>s<CR>
-nnoremap <Leader>so :ZoomToggle<CR>
+nnoremap <silent> <Leader>ss :nnoremap <Leader>s<CR>
+nnoremap <silent> <Leader>so :ZoomToggle<CR>
+nnoremap <silent> <Leader>sd :NERDTreeToggle<CR>
 
 " pbpaste / copy
-nnoremap <silent> <Leader>P :.!pbpaste<CR>
+nnoremap <silent> <Leader><Leader>P :let @p=system("pbpaste")<CR>"pp
+nnoremap <silent> <Leader>P :let @p=system("pbpaste")<CR>"pP
 nnoremap <silent> <Leader>Y :.w !pbcopy<CR><CR>
 vnoremap <silent> <Leader>Y :w !pbcopy<CR><CR>
 
@@ -53,20 +55,20 @@ vnoremap <silent> <Esc>[1;5D <Plug>CamelCaseMotion_b
 vnoremap <silent> <Esc>[1;5C <Plug>CamelCaseMotion_e
 
 " TagBar
-nmap <Leader>O :TagbarToggle<CR>
+nmap <silent> <Leader>O :TagbarToggle<CR>
 
 " Gundo
-nmap <Leader>U :GundoToggle<CR>
+nmap <silent> <Leader>U :GundoToggle<CR>
 
 " YankRing
 nnoremap <silent> <Leader>p :YRShow<CR>1b1b1b
 
 " CtrlP
 let g:ctrlp_extensions = ['tag', 'changes']
-nnoremap <Leader>t :CtrlPBuffer<CR>
-nnoremap <Leader>T :CtrlP<CR>
-nnoremap <Leader>r :CtrlPTags<CR>
+nnoremap <silent> <Leader>t :CtrlPBuffer<CR>
+nnoremap <silent> <Leader>T :CtrlP<CR>
+nnoremap <silent> <Leader>r :CtrlPTags<CR>
 
 " Buffer closing
-nnoremap <Leader>q :Bdelete<CR>
+nnoremap <silent> <Leader>q :Bdelete<CR>
 
