@@ -109,15 +109,14 @@ let g:go_highlight_operators = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+let g:go_auto_type_info = 1
 
 " Use goimports
 " NOTE: Semi-broken lately, unsure why.
 let g:go_fmt_command = "goimports"
 
 " expandtab is on, but tabs still used for indentation.
-au filetype go set noexpandtab
-au filetype go set ts=8
-au filetype go set sw=8
+au filetype go set noexpandtab ts=8 sw=8 tw=79 formatoptions=cr
 
 " YankRing
 let g:yankring_history_dir = '$HOME/.vim'
