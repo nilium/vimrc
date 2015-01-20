@@ -48,7 +48,7 @@ set backspace=indent,eol,start
 set nowrap
 set linebreak
 let &showbreak='↳ '
-if has('breakindent')
+if has('patch338')
         set breakindent
 endif
 
