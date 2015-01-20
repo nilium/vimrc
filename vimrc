@@ -35,6 +35,9 @@ set nocompatible
 " Death to the audio bell
 set visualbell
 
+" Split to the right and down
+set splitright splitbelow
+
 " Highlight matching brackets
 set showmatch
 
@@ -112,7 +115,7 @@ let g:go_highlight_structs = 1
 let g:go_fmt_command = "goimports"
 
 " expandtab is on, but tabs still used for indentation.
-au filetype go set expandtab
+au filetype go set noexpandtab
 au filetype go set ts=8
 au filetype go set sw=8
 
@@ -134,6 +137,9 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " Indent guides
 let g:indent_guides_enable_on_vim_startup = 1
+
+" Neocomplete
+let g:neocomplete#enable_at_startup = 1
 
 " Load mappings
 source $HOME/.vim/mappings.vim

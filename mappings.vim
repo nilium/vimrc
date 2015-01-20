@@ -72,3 +72,6 @@ nnoremap <silent> <Leader>r :CtrlPTags<CR>
 " Buffer closing
 nnoremap <silent> <Leader>q :Bdelete<CR>
 
+" hdot
+inoremap :hdot ㆍ
+
