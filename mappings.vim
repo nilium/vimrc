@@ -19,10 +19,10 @@ nnoremap <silent> <Leader>sd :NERDTreeToggle<CR>
 nnoremap <silent> <Leader><Leader>? :map ,<CR>
 
 " pbpaste / copy
-nnoremap <silent> <Leader><Leader>P :let @p=system("pbpaste")<CR>"pp
-nnoremap <silent> <Leader>P :let @p=system("pbpaste")<CR>"pP
-nnoremap <silent> <Leader>Y :.w !pbcopy<CR><CR>
-vnoremap <silent> <Leader>Y :w !pbcopy<CR><CR>
+nnoremap <silent> <Leader><Leader>p :let @p=system("pbpaste")<CR>"pp
+nnoremap <silent> <Leader><Leader>P :let @p=system("pbpaste")<CR>"pP
+nnoremap <silent> <Leader><Leader>Y :.w !pbcopy<CR><CR>
+vnoremap <silent> <Leader><Leader>Y :w !pbcopy<CR><CR>
 
 " Move up / down between lines.
 " Do not remap home or end, as those should always refer to the end of line.
