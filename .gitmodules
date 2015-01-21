@@ -1,9 +1,6 @@
 [submodule "bundle/CamelCaseMotion"]
 	path = bundle/CamelCaseMotion
 	url = git@github.com:bkad/CamelCaseMotion
-[submodule "bundle/colorizer"]
-	path = bundle/colorizer
-	url = git@github.com:lilydjwg/colorizer.git
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
