@@ -159,6 +159,9 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 " ack.vim
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+" NERDTree
+let g:NERDTreeWinSize = 44
+
 " Load mappings
 source $HOME/.vim/mappings.vim
 
