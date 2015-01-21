@@ -15,6 +15,9 @@ nnoremap <silent> <Leader>ss :nnoremap <Leader>s<CR>
 nnoremap <silent> <Leader>so :ZoomToggle<CR>
 nnoremap <silent> <Leader>sd :NERDTreeToggle<CR>
 
+" Display <Leader> mappings
+nnoremap <silent> <Leader><Leader>? :map ,<CR>
+
 " pbpaste / copy
 nnoremap <silent> <Leader><Leader>P :let @p=system("pbpaste")<CR>"pp
 nnoremap <silent> <Leader>P :let @p=system("pbpaste")<CR>"pP
