@@ -67,7 +67,7 @@ nnoremap <silent> <Leader>p :YRShow<CR>1b1b1b
 let g:ctrlp_extensions = ['tag', 'changes']
 nnoremap <silent> <Leader>t :CtrlPBuffer<CR>
 nnoremap <silent> <Leader>T :CtrlP<CR>
-nnoremap <silent> <Leader>r :CtrlPTags<CR>
+nnoremap <silent> <Leader>r :CtrlPTag<CR>
 
 " Buffer closing
 nnoremap <silent> <Leader>q :Bdelete<CR>
