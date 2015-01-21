@@ -99,6 +99,11 @@ set laststatus=2
 " In Makefiles, don't expand tabs to spaces, since we need hard tabs
 au filetype make set noexpandtab
 
+" markdown
+au filetype markdown set expandtab
+au filetype markdown set ts=4
+au filetype markdown set sw=4
+
 " go (and vim-go)
 let g:go_highlight_array_whitespace_error = 1
 let g:go_highlight_chan_whitespace_error = 1
