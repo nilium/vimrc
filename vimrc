@@ -165,3 +165,5 @@ source $HOME/.vim/mappings.vim
 " Load pathogen
 execute pathogen#infect()
 
+" Load tabular patterns
+au VimEnter source $HOME/.vim/tabular-patterns.vim
