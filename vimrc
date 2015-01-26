@@ -3,7 +3,7 @@
 "
 
 " Stick disabled plugins here.
-let g:pathogen_disabled = ["supertab"]
+let g:pathogen_disabled = ["vim-airline","vim-bufferline"]
 
 " Timeouts
 set timeout ttimeout timeoutlen=300 ttimeoutlen=0
@@ -153,6 +153,11 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " NERDTree
 let g:NERDTreeWinSize = 44
+
+" buftabline
+let g:buftabline_numbers = 1
+let g:buftabline_indicators = 1
+
 
 " Load mappings
 source $HOME/.vim/mappings.vim

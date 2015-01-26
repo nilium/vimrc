@@ -5,6 +5,13 @@
 " Leader to comma
 let mapleader = ','
 
+" Switch buffers
+nnoremap <silent> <Leader>bn :bnext<CR>
+nnoremap <silent> <Leader>bp :bprev<CR>
+" Use count to switch buffers. If no count provided or <= zero, use :ls.
+nnoremap <silent> <expr> <Leader>b (v:count > 0 ? ':b'.v:count : ':ls').'<CR>'
+nnoremap <silent> <Leader>ls :ls<CR>
+
 " Useful editing mode toggles.
 nnoremap <silent> <Leader>sl :set list!<CR>
 nnoremap <silent> <Leader>sw :set wrap!<CR>
