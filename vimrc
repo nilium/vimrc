@@ -21,6 +21,9 @@ set undoreload=10000
 " back in eventually.
 let g:proj_window_width = 30
 
+" Keep 8 lines of context in window.
+set scrolloff=8
+
 " Highlight the current line and show the line/col in the status bar.
 set cursorline
 set ruler
