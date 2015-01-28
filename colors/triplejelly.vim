@@ -394,7 +394,7 @@ call s:X("NonText","555E4F","","","Grey","")
 
 call s:X("SpecialKey","444444","1c1c1c","",s:termBlack,"")
 
-call s:X("Search","C6CFD2","1a364a","none","White","DarkCyan")
+call s:X("Search","DFDFDF","5F00FF","none","White","DarkCyan")
 
 call s:X("Directory","dad085","","","Yellow","")
 call s:X("ErrorMsg","","902020","","","DarkRed")
@@ -557,6 +557,7 @@ end
 " Manual overrides for 256-color terminals. Dark colors auto-map badly.
 " TODO: Port from jellybeans
 if !s:low_color
+  hi Search ctermbg=57 ctermfg=188
   hi StatusLineNC ctermbg=232 ctermfg=244
   hi Folded ctermbg=237
   hi FoldColumn ctermbg=237
