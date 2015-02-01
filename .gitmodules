@@ -118,3 +118,7 @@
         branch = master
 	path = bundle/vim-buftabline
 	url = git@github.com:ap/vim-buftabline.git
+[submodule "bundle/ultisnips"]
+        branch = master
+	path = bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git

@@ -155,6 +155,14 @@ let g:NERDTreeWinSize = 44
 let g:buftabline_numbers = 1
 let g:buftabline_indicators = 1
 
+" ultisnips
+let g:UltiSnipsExpandTrigger = '<Tab>'
+let g:UltiSnipsJumpForwardTrigger = '<Tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
+let g:UltiSnipsListSnippets = '<C-Tab>'
+
+let g:UltiSnipsEditSplit = 'context'
+
 
 " Load mappings
 source $HOME/.vim/mappings.vim
