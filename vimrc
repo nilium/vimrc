@@ -94,18 +94,6 @@ endif
 set showtabline=1
 set laststatus=2
 
-"
-" Filetype-specific settings
-"
-
-" make
-" In Makefiles, don't expand tabs to spaces, since we need hard tabs
-au filetype make set noexpandtab
-
-" markdown
-au filetype markdown set expandtab
-au filetype markdown set ts=4
-au filetype markdown set sw=4
 
 " go (and vim-go)
 let g:go_highlight_array_whitespace_error = 1
@@ -122,9 +110,6 @@ let g:go_auto_type_info = 1
 " Use goimports
 " NOTE: Semi-broken lately, unsure why.
 let g:go_fmt_command = "goimports"
-
-" expandtab is on, but tabs still used for indentation.
-au filetype go set noexpandtab ts=8 sw=8 tw=79 formatoptions=cr
 
 " YankRing
 let g:yankring_history_dir = '$HOME/.vim'
