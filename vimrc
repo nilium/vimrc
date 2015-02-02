@@ -124,6 +124,9 @@ let g:yankring_history_dir = '$HOME/.vim'
 " I don't remember why I had this in a separate file.
 " so $HOME/.vim/airline-conf.vim
 
+" Load lightline configuration
+so $HOME/.vim/lightline.vim
+
 " Pretty braces
 if exists('RainbowParenthesesToggle')
 	au VimEnter * RainbowParenthesesToggle
