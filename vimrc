@@ -1,3 +1,7 @@
+scriptencoding utf-8
+set encoding=utf-8
+"vim:set ts=8 sw=8 noexpandtab:
+
 "
 " Settings
 "
@@ -52,14 +56,14 @@ set nowrap
 set linebreak
 let &showbreak='↳ '
 if has('patch338')
-        set breakindent
+	set breakindent
 endif
 
 " Indentation
 set autoindent
 set smarttab
 " Let the indent plugin handle most of this.
-set expandtab
+set noexpandtab
 set shiftwidth=8
 set tabstop=8
 let &listchars='tab:→ ,eol:¬'
@@ -73,9 +77,9 @@ set mouse=a
 
 " Encryption -- use blowfish2
 if has('patch-7.4.399')
-        set cryptmethod=blowfish2
+	set cryptmethod=blowfish2
 else
-        set cryptmethod=blowfish
+	set cryptmethod=blowfish
 endif
 
 " Colors / UI-specific things
