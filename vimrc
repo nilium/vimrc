@@ -48,6 +48,9 @@ set splitright splitbelow
 " Highlight matching brackets
 set showmatch
 
+" Ignore stuff
+set wildignore=*/node_modules/*,*.so,*.swp,*/.git/*,*.zip,*.dmg,*/*.sparsebundle/*
+
 " Make that backspace key work the way it should
 set backspace=indent,eol,start
 
@@ -159,6 +162,11 @@ let g:UltiSnipsListSnippets = '<C-Tab>'
 
 let g:UltiSnipsEditSplit = 'context'
 
+" CtrlP
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules)$',
+  \ 'file': '\v\.(exe|so|dll|a|swp)$',
+  \ }
 
 " Load mappings
 source $HOME/.vim/mappings.vim
