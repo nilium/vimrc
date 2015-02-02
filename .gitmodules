@@ -122,3 +122,6 @@
 	branch = master
 	path = bundle/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "bundle/vim-sleuth"]
+	path = bundle/vim-sleuth
+	url = git@github.com:tpope/vim-sleuth.git
