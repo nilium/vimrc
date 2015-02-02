@@ -7,30 +7,30 @@ there in the future.
 
 
 ack.vim ::
-        For ':Ack', since I use ack rather heavily. Configured to use ag for
-        performance reasons.
+	For ':Ack', since I use ack rather heavily. Configured to use ag for
+	performance reasons.
 asciidoc-vim ::
-        AsciiDoc syntax highlighting.
+	AsciiDoc syntax highlighting.
 CamelCaseMotion ::
-        Movement between camel-cased words using ',b', ',w', and ',e'.
+	Movement between camel-cased words using ',b', ',w', and ',e'.
 ctrlp.vim ::
-        Slightly faster buffer, file, tag, etc. lookup using ',t', ',T', and
-        ',r' (buffers, files, and tags respectively).
+	Slightly faster buffer, file, tag, etc. lookup using ',t', ',T', and
+	',r' (buffers, files, and tags respectively).
 delimitMate ::
-        Auto-closing brackets and quotes. (Type a quote, get a second inserted
-        after the cursor.)
+	Auto-closing brackets and quotes. (Type a quote, get a second inserted
+	after the cursor.)
 gundo.vim ::
-        Better undo tree navigation.
+	Better undo tree navigation.
 lightline ::
-        Pretty status line. Also pretty useful. Replaces vim-airline, which was
+	Pretty status line. Also pretty useful. Replaces vim-airline, which was
 	trying to do too much most of the time and ended up with a cluttered
 	status line as a result.
 nerdcommenter ::
-        Commenting mappings. Likely to be removed if it proves less useful than
-        just inserting a bunch of line comments with visual block mode.
+	Commenting mappings. Likely to be removed if it proves less useful than
+	just inserting a bunch of line comments with visual block mode.
 nerdtree ::
-        Directory tree navigation. The closest I'm getting to anything
-        resembling actual project management at this time.
+	Directory tree navigation. The closest I'm getting to anything
+	resembling actual project management at this time.
 rainbow ::
 +
 --
@@ -46,67 +46,67 @@ a window that isn't a part of a buffer, since I don't know.
 (Replaces previous bundle rainbow_parentheses.)
 --
 Smart-Tabs ::
-        Indenting with tabs and aligning with spaces. Guarantees everyone can
-        use their own indent sizes without messing up mid-line alignments, such
-        as for comments, assignments, and so on.
+	Indenting with tabs and aligning with spaces. Guarantees everyone can
+	use their own indent sizes without messing up mid-line alignments, such
+	as for comments, assignments, and so on.
 syntastic ::
-        Syntax checking.
+	Syntax checking.
 tabular ::
-        Alignments (e.g., align comments, assignments, etc.).
+	Alignments (e.g., align comments, assignments, etc.).
 tagbar ::
-        Code overview using tags.
+	Code overview using tags.
 ultisnips ::
 	Snippets. Works better than neosnippet.
 vim-bbye ::
-        Buffer deletion that does what I want. Provides ':Bdelete', which I
-        have mapped to ',q'.
+	Buffer deletion that does what I want. Provides ':Bdelete', which I
+	have mapped to ',q'.
 vim-bufferline ::
-        Display buffer names and numbers in the command bar. Provides a better
-        overview of open buffers than, say, a tab line, since it's not
-        consuming space when I don't need it. (Currently disabled while trying
+	Display buffer names and numbers in the command bar. Provides a better
+	overview of open buffers than, say, a tab line, since it's not
+	consuming space when I don't need it. (Currently disabled while trying
 	vim-buftabline.)
 vim-buftabline ::
 	Displays buffer names / names in the tabline. Basically accomplishes
 	what I wanted with bufferline, but without tabs.
 vim-easymotion ::
-        Jumping around buffers.
+	Jumping around buffers.
 vim-fugitive ::
-        Git support, mainly used for Gdiff so I can visually put hunks in the
-        index, though it's useful overall.
+	Git support, mainly used for Gdiff so I can visually put hunks in the
+	index, though it's useful overall.
 vim-gitgutter ::
-        Seeing which lines in a source file have changed. Would have a similar
-        plugin for Mercurial, but Mercurial integration in everything is slow
-        and I've given up on this.
+	Seeing which lines in a source file have changed. Would have a similar
+	plugin for Mercurial, but Mercurial integration in everything is slow
+	and I've given up on this.
 vim-go ::
-        Go support (syntax, completion, etc.)
+	Go support (syntax, completion, etc.)
 vim-indent-guides ::
-        Indentation guides. Behaves a bit odd in Go due to gofmt, so may get
-        disabled there in the future.
+	Indentation guides. Behaves a bit odd in Go due to gofmt, so may get
+	disabled there in the future.
 vim-multiple-cursors ::
-        Multiple caret support. Admittedly not using it all that much and it's
-        pretty clunky, but I want to give it a shot for when I have time to
-        work out what exactly it can do.
+	Multiple caret support. Admittedly not using it all that much and it's
+	pretty clunky, but I want to give it a shot for when I have time to
+	work out what exactly it can do.
 vim-sleuth ::
 	Indentation detection.
 vim-surround ::
-        Surrounding stuff with stuff, changing/adding/removing
-        braces/quotes/other things.
+	Surrounding stuff with stuff, changing/adding/removing
+	braces/quotes/other things.
 vim-unimpaired ::
-        Mainly using this for transposing lines (i.e., with '[e' and ']e'), but
-        it has a lot of other tools I use sporadically.
+	Mainly using this for transposing lines (i.e., with '[e' and ']e'), but
+	it has a lot of other tools I use sporadically.
 VimCompletesMe ::
-        Autocompletion bundle I'm testing. Replaces neocomplete, which caused
-        far too many interruptions while typing.
+	Autocompletion bundle I'm testing. Replaces neocomplete, which caused
+	far too many interruptions while typing.
 vimproc.vim ::
-        Purportedly for other plugins to do asynchronous stuff. Only have it
-        here as a requirement of neocomplete. Pretty sure it's unused by
-        neosnippet, but I haven't looked into what else is using it yet.
+	Purportedly for other plugins to do asynchronous stuff. Only have it
+	here as a requirement of neocomplete. Pretty sure it's unused by
+	neosnippet, but I haven't looked into what else is using it yet.
 xterm-color-table.vim ::
-        Xterm color table. Useful for when I need to tweak triplejelly.
+	Xterm color table. Useful for when I need to tweak triplejelly.
 YankRing.vim ::
-        For keeping yank/paste history in a more useful place than registers.
-        Heavily used more for the ability to mash 'p' or 'P' and hit '<C-p>' and
-        '<C-n>' to move through previous entries in the ring and occasionally
-        ',p' for pasting.
+	For keeping yank/paste history in a more useful place than registers.
+	Heavily used more for the ability to mash 'p' or 'P' and hit '<C-p>' and
+	'<C-n>' to move through previous entries in the ring and occasionally
+	',p' for pasting.
 
-// vim: set syntax=asciidoc ts=8 tw=79 sw=8:
+// vim: set syntax=asciidoc ts=8 tw=79 sw=8 noexpandtab:
