@@ -26,10 +26,6 @@
 	branch = master
 	path = bundle/tagbar
 	url = git@github.com:majutsushi/tagbar
-[submodule "bundle/tmuxline.vim"]
-	branch = master
-	path = bundle/tmuxline.vim
-	url = git@github.com:edkolev/tmuxline.vim.git
 [submodule "bundle/vim-bbye"]
 	branch = master
 	path = bundle/vim-bbye

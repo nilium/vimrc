@@ -51,8 +51,6 @@ tabular ::
         Alignments (e.g., align comments, assignments, etc.).
 tagbar ::
         Code overview using tags.
-tmuxline.vim ::
-        Settings tmux status line using airline.
 vim-airline ::
         Pretty status line. Also pretty useful. More important because other
         stuff integrates to make it useful rather than being directly useful on
