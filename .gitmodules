@@ -1,117 +1,117 @@
 [submodule "bundle/CamelCaseMotion"]
-        branch = master
+	branch = master
 	path = bundle/CamelCaseMotion
 	url = git@github.com:bkad/CamelCaseMotion
 [submodule "bundle/ctrlp.vim"]
-        branch = master
+	branch = master
 	path = bundle/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
 [submodule "bundle/gundo.vim"]
-        branch = master
+	branch = master
 	path = bundle/gundo.vim
 	url = git@github.com:sjl/gundo.vim
 [submodule "bundle/nerdcommenter"]
-        branch = master
+	branch = master
 	path = bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter
 [submodule "bundle/syntastic"]
-        branch = master
+	branch = master
 	path = bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/tabular"]
-        branch = master
+	branch = master
 	path = bundle/tabular
 	url = git@github.com:godlygeek/tabular
 [submodule "bundle/tagbar"]
-        branch = master
+	branch = master
 	path = bundle/tagbar
 	url = git@github.com:majutsushi/tagbar
 [submodule "bundle/tmuxline.vim"]
-        branch = master
+	branch = master
 	path = bundle/tmuxline.vim
 	url = git@github.com:edkolev/tmuxline.vim.git
 [submodule "bundle/vim-bbye"]
-        branch = master
+	branch = master
 	path = bundle/vim-bbye
 	url = git@github.com:moll/vim-bbye.git
 [submodule "bundle/vim-easymotion"]
-        branch = master
+	branch = master
 	path = bundle/vim-easymotion
 	url = git@github.com:Lokaltog/vim-easymotion
 [submodule "bundle/vim-fugitive"]
-        branch = master
+	branch = master
 	path = bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
 [submodule "bundle/vim-go"]
-        branch = master
+	branch = master
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
 [submodule "bundle/vim-indent-guides"]
-        branch = master
+	branch = master
 	path = bundle/vim-indent-guides
 	url = git@github.com:nathanaelkane/vim-indent-guides.git
 [submodule "bundle/vim-multiple-cursors"]
-        branch = master
+	branch = master
 	path = bundle/vim-multiple-cursors
 	url = git@github.com:terryma/vim-multiple-cursors.git
 [submodule "bundle/vim-surround"]
-        branch = master
+	branch = master
 	path = bundle/vim-surround
 	url = git@github.com:tpope/vim-surround
 [submodule "bundle/vim-unimpaired"]
-        branch = master
+	branch = master
 	path = bundle/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired
 [submodule "bundle/vimproc.vim"]
-        branch = master
+	branch = master
 	path = bundle/vimproc.vim
 	url = git@github.com:Shougo/vimproc.vim.git
 [submodule "bundle/xterm-color-table.vim"]
-        branch = master
+	branch = master
 	path = bundle/xterm-color-table.vim
 	url = git@github.com:guns/xterm-color-table.vim.git
 [submodule "bundle/YankRing.vim"]
-        branch = master
+	branch = master
 	path = bundle/YankRing.vim
 	url = git@github.com:vim-scripts/YankRing.vim
 [submodule "bundle/Smart-Tabs"]
-        branch = master
+	branch = master
 	path = bundle/Smart-Tabs
 	url = git@github.com:vim-scripts/Smart-Tabs.git
 [submodule "bundle/delimitMate"]
-        branch = master
+	branch = master
 	path = bundle/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
 [submodule "bundle/asciidoc-vim"]
-        branch = master
+	branch = master
 	path = bundle/asciidoc-vim
 	url = git@github.com:dagwieers/asciidoc-vim
 [submodule "bundle/vim-bufferline"]
-        branch = master
+	branch = master
 	path = bundle/vim-bufferline
 	url = git@github.com:bling/vim-bufferline.git
 [submodule "bundle/vim-gitgutter"]
-        branch = master
+	branch = master
 	path = bundle/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
 [submodule "bundle/nerdtree"]
-        branch = master
+	branch = master
 	path = bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
 [submodule "bundle/VimCompletesMe"]
-        branch = master
+	branch = master
 	path = bundle/VimCompletesMe
 	url = git@github.com:ajh17/VimCompletesMe.git
 [submodule "bundle/ack.vim"]
-        branch = master
+	branch = master
 	path = bundle/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
 [submodule "bundle/vim-buftabline"]
-        branch = master
+	branch = master
 	path = bundle/vim-buftabline
 	url = git@github.com:ap/vim-buftabline.git
 [submodule "bundle/ultisnips"]
-        branch = master
+	branch = master
 	path = bundle/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
 [submodule "bundle/rainbow"]
