@@ -21,15 +21,17 @@ delimitMate ::
         after the cursor.)
 gundo.vim ::
         Better undo tree navigation.
-neosnippet.vim ::
-        Snippets in vim-go. Not actually using snippets elsewhere.
+lightline ::
+        Pretty status line. Also pretty useful. Replaces vim-airline, which was
+	trying to do too much most of the time and ended up with a cluttered
+	status line as a result.
 nerdcommenter ::
         Commenting mappings. Likely to be removed if it proves less useful than
         just inserting a bunch of line comments with visual block mode.
 nerdtree ::
         Directory tree navigation. The closest I'm getting to anything
         resembling actual project management at this time.
-rainbow_parentheses.vim ::
+rainbow ::
 +
 --
 Highlighting braces in colors so that I can pick out their start and
@@ -40,6 +42,8 @@ May need to write my own plugin to do exactly what I want: highlight not just
 braces but lines and show off-screen matching braces at the top or bottom of a
 window respectively -- will depend on how flexible vim is with showing stuff in
 a window that isn't a part of a buffer, since I don't know.
+
+(Replaces previous bundle rainbow_parentheses.)
 --
 Smart-Tabs ::
         Indenting with tabs and aligning with spaces. Guarantees everyone can
@@ -51,17 +55,19 @@ tabular ::
         Alignments (e.g., align comments, assignments, etc.).
 tagbar ::
         Code overview using tags.
-vim-airline ::
-        Pretty status line. Also pretty useful. More important because other
-        stuff integrates to make it useful rather than being directly useful on
-        its own.
+ultisnips ::
+	Snippets. Works better than neosnippet.
 vim-bbye ::
         Buffer deletion that does what I want. Provides ':Bdelete', which I
         have mapped to ',q'.
 vim-bufferline ::
         Display buffer names and numbers in the command bar. Provides a better
         overview of open buffers than, say, a tab line, since it's not
-        consuming space when I don't need it.
+        consuming space when I don't need it. (Currently disabled while trying
+	vim-buftabline.)
+vim-buftabline ::
+	Displays buffer names / names in the tabline. Basically accomplishes
+	what I wanted with bufferline, but without tabs.
 vim-easymotion ::
         Jumping around buffers.
 vim-fugitive ::
@@ -80,6 +86,8 @@ vim-multiple-cursors ::
         Multiple caret support. Admittedly not using it all that much and it's
         pretty clunky, but I want to give it a shot for when I have time to
         work out what exactly it can do.
+vim-sleuth ::
+	Indentation detection.
 vim-surround ::
         Surrounding stuff with stuff, changing/adding/removing
         braces/quotes/other things.
