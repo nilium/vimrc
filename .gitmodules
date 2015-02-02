@@ -14,10 +14,6 @@
         branch = master
 	path = bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter
-[submodule "bundle/rainbow_parentheses.vim"]
-        branch = master
-	path = bundle/rainbow_parentheses.vim
-	url = git@github.com:kien/rainbow_parentheses.vim
 [submodule "bundle/syntastic"]
         branch = master
 	path = bundle/syntastic
@@ -34,10 +30,6 @@
         branch = master
 	path = bundle/tmuxline.vim
 	url = git@github.com:edkolev/tmuxline.vim.git
-[submodule "bundle/vim-airline"]
-        branch = master
-	path = bundle/vim-airline
-	url = git@github.com:bling/vim-airline.git
 [submodule "bundle/vim-bbye"]
         branch = master
 	path = bundle/vim-bbye
@@ -122,3 +114,11 @@
         branch = master
 	path = bundle/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
+[submodule "bundle/rainbow"]
+	branch = master
+	path = bundle/rainbow
+	url = git@github.com:luochen1990/rainbow.git
+[submodule "bundle/lightline.vim"]
+	branch = master
+	path = bundle/lightline.vim
+	url = git@github.com:itchyny/lightline.vim.git
