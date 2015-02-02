@@ -66,7 +66,7 @@ set smarttab
 set noexpandtab
 set shiftwidth=8
 set tabstop=8
-let &listchars='tab:→ ,eol:¬'
+let &listchars='tab:│·,trail:·,extends:→,precedes:←'
 set nolist
 
 " Show line numbers
