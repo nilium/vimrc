@@ -116,16 +116,18 @@ let g:yankring_history_dir = '$HOME/.vim'
 
 " Load airline configuration
 " I don't remember why I had this in a separate file.
-so $HOME/.vim/airline-conf.vim
+" so $HOME/.vim/airline-conf.vim
 
-"
 " Pretty braces
-"
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-" Keep square braces disabled for now -- rarely nested.
-"au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+if exists('RainbowParenthesesToggle')
+	au VimEnter * RainbowParenthesesToggle
+	au Syntax * RainbowParenthesesLoadRound
+	" Keep square braces disabled for now -- rarely nested.
+	"au Syntax * RainbowParenthesesLoadSquare
+	au Syntax * RainbowParenthesesLoadBraces
+else " rainbow
+	let g:rainbow_active = 1
+endif
 
 " Indent guides
 let g:indent_guides_enable_on_vim_startup = 1
