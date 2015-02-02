@@ -73,7 +73,9 @@ set nolist
 set number
 
 " Enable the mouse (if supported)
-set mouse=a
+if has('mouse')
+	set mouse=a
+endif
 
 " Encryption -- use blowfish2
 if has('patch-7.4.399')
