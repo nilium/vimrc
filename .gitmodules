@@ -42,10 +42,6 @@
 	branch = master
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
-[submodule "bundle/vim-indent-guides"]
-	branch = master
-	path = bundle/vim-indent-guides
-	url = git@github.com:nathanaelkane/vim-indent-guides.git
 [submodule "bundle/vim-multiple-cursors"]
 	branch = master
 	path = bundle/vim-multiple-cursors

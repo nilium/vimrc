@@ -79,9 +79,6 @@ vim-gitgutter ::
 	and I've given up on this.
 vim-go ::
 	Go support (syntax, completion, etc.)
-vim-indent-guides ::
-	Indentation guides. Behaves a bit odd in Go due to gofmt, so may get
-	disabled there in the future.
 vim-multiple-cursors ::
 	Multiple caret support. Admittedly not using it all that much and it's
 	pretty clunky, but I want to give it a shot for when I have time to
