@@ -80,6 +80,12 @@ if has('mouse')
 	set mouse=a
 endif
 
+if has('mouse_sgr')
+	set ttymouse=sgr
+else
+	set ttymouse=xterm2
+end
+
 " Encryption -- use blowfish2
 if has('patch-7.4.399')
 	set cryptmethod=blowfish2
