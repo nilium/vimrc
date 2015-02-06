@@ -9,6 +9,9 @@ set encoding=utf-8
 " Stick disabled plugins here.
 let g:pathogen_disabled = ["vim-airline","vim-bufferline"]
 
+" Mark buffers as hidden instead of abandoned
+set hidden
+
 " Timeouts
 set timeout ttimeout timeoutlen=300 ttimeoutlen=0
 set noesckeys
