@@ -123,3 +123,6 @@
 [submodule "bundle/unite-help"]
 	path = bundle/unite-help
 	url = git@github.com:Shougo/unite-help.git
+[submodule "bundle/vim-peekaboo"]
+	path = bundle/vim-peekaboo
+	url = git@github.com:junegunn/vim-peekaboo.git
