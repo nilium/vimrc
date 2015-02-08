@@ -1,10 +1,11 @@
 scriptencoding utf-8
-set encoding=utf-8
-"vim:set ts=8 sw=8 noexpandtab:
 
 "
 " Settings
 "
+
+" Encoding to utf-8.
+set encoding=utf-8
 
 " Stick disabled plugins here.
 let g:pathogen_disabled = ["vim-airline","vim-bufferline"]
@@ -28,8 +29,10 @@ set undoreload=10000
 " back in eventually.
 let g:proj_window_width = 30
 
-" Keep 8 lines of context in window.
-set scrolloff=8
+" Keep 3 lines of context in window, 5 columns.
+" Used to be 8, found I only regularly wanted about 3 lines of context.
+set scrolloff=3
+set sidescrolloff=5
 
 " Highlight the current line and show the line/col in the status bar.
 set cursorline
@@ -60,6 +63,7 @@ set backspace=indent,eol,start
 " Wrapping
 set nowrap
 set linebreak
+set display+=lastline
 let &showbreak='↳ '
 if has('patch-7.4.338')
 	set breakindent
@@ -69,14 +73,16 @@ endif
 set autoindent
 set smarttab
 " Let the indent plugin handle most of this.
-set noexpandtab
-set shiftwidth=8
-set tabstop=8
-let &listchars='tab:│·,trail:·,extends:→,precedes:←'
+let &listchars='tab:│·,trail:·,extends:→,precedes:←,nbsp:·'
 set nolist
 
 " Show line numbers
 set number
+set ruler
+
+" Search-related
+set hlsearch
+set incsearch
 
 " Enable the mouse (if supported)
 if has('mouse')
@@ -98,6 +104,8 @@ endif
 
 " Colors / UI-specific things
 set wildmenu
+set showcmd
+set showmode
 set t_Co=256
 colorscheme triplejelly
 
@@ -112,6 +120,11 @@ endif
 set showtabline=1
 set laststatus=2
 
+" Default formatoptions
+set formatoptions=crqn1
+if has('patch-7.3.541')
+	set formatoptions+=j
+endif
 
 " go (and vim-go)
 let g:go_highlight_array_whitespace_error = 1
@@ -147,14 +160,16 @@ if exists('RainbowParenthesesToggle')
 	"au Syntax * RainbowParenthesesLoadSquare
 	au Syntax * RainbowParenthesesLoadBraces
 else " rainbow
-	let g:rainbow_active = 1
+	let g:rainbow_active = 0
 endif
 
 " Indent guides
 let g:indent_guides_enable_on_vim_startup = 1
 
 " ack.vim
-let g:ackprg = 'ag --nogroup --nocolor --column'
+if executable('ag')
+	let g:ackprg = 'ag --nogroup --nocolor --column'
+endif
 
 " NERDTree
 let g:NERDTreeWinSize = 44
@@ -185,3 +200,10 @@ execute pathogen#infect()
 
 " Load tabular patterns
 au VimEnter source $HOME/.vim/tabular-patterns.vim
+
+" viminfo / preservatives
+set history=1000
+set viminfo=!,\"1000,'100,/1000,@1000,:1000,<1000,h,n~/.vim/viminfo
+set sessionoptions-=options
+
+" vim: set tw=79 ts=8 sw=8 noexpandtab:
