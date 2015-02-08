@@ -13,6 +13,12 @@ nnoremap <Leader>kr :Unite -start-insert register<CR>
 nnoremap <Leader>kk :UniteResume<CR>
 nnoremap <Leader>kR <Plug>(unite_restart)
 
+" Clear search.
+nnoremap <Leader><Leader> :nohlsearch<CR>:echo ''<CR>
+
+" Folding
+nnoremap <silent> <Leader><CR> za
+
 " Leader to comma
 let mapleader = ","
 
