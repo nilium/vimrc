@@ -117,3 +117,9 @@
 [submodule "bundle/vim-sleuth"]
 	path = bundle/vim-sleuth
 	url = git@github.com:tpope/vim-sleuth.git
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = git@github.com:Shougo/unite.vim.git
+[submodule "bundle/unite-help"]
+	path = bundle/unite-help
+	url = git@github.com:Shougo/unite-help.git
