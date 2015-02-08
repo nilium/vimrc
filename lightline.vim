@@ -21,6 +21,7 @@ let g:lightline = {
 \		'readonly': 'ShowReadOnly',
 \		'git-branch': 'ShowGitBranch',
 \	},
+\	'colorscheme': 'triplejelly',
 \}
 
 function! ShowReadOnly()
