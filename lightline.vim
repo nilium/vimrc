@@ -4,12 +4,24 @@ let g:lightline = {
 \	},
 \	'active': {
 \		'left': [
-\			['mode', 'paste'],
-\			['readonly', 'git-branch', 'fancy-path', 'modified'],
+\			['column'],
+\			['paste', 'readonly', 'fancy-path', 'modified'],
+\			['tagbar-tag'],
 \		],
 \		'right': [
-\			['lineinfo'],
-\			['fileencoding', 'filetype'],
+\			[],
+\			['git-branch'],
+\			['bufnum'],
+\		],
+\	},
+\	'inactive': {
+\		'left': [
+\			['readonly', 'fancy-path', 'modified'],
+\		],
+\		'right': [
+\			[],
+\			['git-branch'],
+\			['bufnum'],
 \		],
 \	},
 \	'component': {
@@ -17,12 +29,25 @@ let g:lightline = {
 \		'filebuf': '%f (%n)',
 \	},
 \	'component_function': {
+\		'tagbar-tag': 'ShowTagBarTag',
 \		'fancy-path': 'ShowFancyPath',
 \		'readonly': 'ShowReadOnly',
 \		'git-branch': 'ShowGitBranch',
 \	},
+\	'separator': {
+\		'left': ' 𝄃 ',
+\		'right': '  𝄂',
+\	},
+\	'subseparator': {
+\		'left': ' ≣ ',
+\		'right': ' ≣ ',
+\	},
 \	'colorscheme': 'triplejelly',
 \}
+
+function! ShowTagBarTag()
+	return tagbar#currenttag('%s', '', 'fs')
+endfunction
 
 function! ShowReadOnly()
 	return &readonly ? '⭤' : ''
@@ -42,8 +67,9 @@ function! ShowFancyPath()
 	" on GitHub yet.
 	"let l:path = system('relpath -nl=false -relative -base '.shellescape(getcwd()).' '.shellescape(expand('%p')).'')
 	let l:path = fnamemodify(expand('%:p'), ':~:.')
-	let l:buf = bufnr(expand('%'))
-	return l:path.' ('.l:buf.')'
+	"let l:buf = bufnr(expand('%'))
+	"return l:path.' ('.l:buf.')'
+	return l:path
 endfunction
 
 if exists('g:loaded_lightline')
