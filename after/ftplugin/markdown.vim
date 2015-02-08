@@ -3,4 +3,4 @@
 set expandtab
 set ts=4
 set sw=4
-let b:should_strip_trailing_ws = 0
+let b:strip_trailing_ws = 0
