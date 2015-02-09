@@ -4,8 +4,8 @@ let g:lightline = {
 \	},
 \	'active': {
 \		'left': [
-\			['column'],
-\			['paste', 'readonly', 'fancy-path', 'modified'],
+\			['column-padded'],
+\			['paste', 'readonly', 'fancy-path', 'filetype'],
 \			['tagbar-tag'],
 \		],
 \		'right': [
@@ -16,7 +16,7 @@ let g:lightline = {
 \	},
 \	'inactive': {
 \		'left': [
-\			['readonly', 'fancy-path', 'modified'],
+\			['readonly', 'fancy-path', 'filetype'],
 \		],
 \		'right': [
 \			[],
@@ -29,21 +29,26 @@ let g:lightline = {
 \		'filebuf': '%f (%n)',
 \	},
 \	'component_function': {
+\               'column-padded': 'PaddedColumn',
 \		'tagbar-tag': 'ShowTagBarTag',
 \		'fancy-path': 'ShowFancyPath',
 \		'readonly': 'ShowReadOnly',
 \		'git-branch': 'ShowGitBranch',
 \	},
 \	'separator': {
-\		'left': ' 𝄃 ',
-\		'right': '  𝄂',
+\		'left': '|',
+\		'right': '|',
 \	},
 \	'subseparator': {
-\		'left': ' ≣ ',
-\		'right': ' ≣ ',
+\		'left': ' ≣',
+\		'right': '≣ ',
 \	},
 \	'colorscheme': 'triplejelly',
 \}
+
+function! PaddedColumn()
+	return printf('%3d', col('.'))
+endfunction
 
 function! ShowTagBarTag()
 	return tagbar#currenttag('%s', '', 'fs')
@@ -69,7 +74,13 @@ function! ShowFancyPath()
 	let l:path = fnamemodify(expand('%:p'), ':~:.')
 	"let l:buf = bufnr(expand('%'))
 	"return l:path.' ('.l:buf.')'
-	return l:path
+	let l:modifier = ''
+	if &modifiable && &modified
+		let l:modifier = '⦿ '
+	elseif &modifiable
+		let l:modifier = '  '
+	endif
+	return l:modifier.l:path
 endfunction
 
 if exists('g:loaded_lightline')
@@ -79,3 +90,5 @@ if exists('g:loaded_lightline')
 	catch
 	endtry
 endif
+
+" vim: set ft=vim ts=8 sw=8 tw=79 sts=0 fo=n1jcroql noet sta :
