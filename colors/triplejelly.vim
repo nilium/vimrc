@@ -364,7 +364,7 @@ call s:X("WildMenu","f0a0c0","302028","","Magenta","")
 
 call s:X("Folded","a0a8b0","384048","none",s:termBlack,"")
 call s:X("FoldColumn","535D66","1f1f1f","","",s:termBlack)
-call s:X("SignColumn","777777","333333","","",s:termBlack)
+call s:X("SignColumn","404040","g:triplejelly_background_color","","",s:termBlack)
 call s:X("ColorColumn","","000000","","",s:termBlack)
 
 call s:X("Title","70b950","","none","Green","")
@@ -561,12 +561,12 @@ if !s:low_color
   hi StatusLineNC ctermbg=232 ctermfg=244
   hi Folded ctermbg=237
   hi FoldColumn ctermbg=237
-  hi SignColumn ctermbg=237
   hi CursorColumn ctermbg=234
   hi CursorLine ctermbg=234
   hi SpecialKey ctermbg=234
   exec "hi NonText ctermbg=".g:triplejelly_background_color_256." ctermfg=236"
   exec "hi LineNr ctermbg=".g:triplejelly_background_color_256
+  exec "hi SignColumn ctermbg=".g:triplejelly_background_color_256
   hi DiffText ctermfg=75
   exec "hi Normal ctermbg=".g:triplejelly_background_color_256
   hi DbgBreakPt ctermbg=26
