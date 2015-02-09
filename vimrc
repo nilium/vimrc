@@ -98,10 +98,12 @@ else
 end
 
 " Encryption -- use blowfish2
-if has('patch-7.4.399')
-	set cryptmethod=blowfish2
-else
-	set cryptmethod=blowfish
+if has('cryptv') && v:progname != 'nvim'
+	if has('patch-7.4.399')
+		set cryptmethod=blowfish2
+	else
+		set cryptmethod=blowfish
+	endif
 endif
 
 " Colors / UI-specific things
