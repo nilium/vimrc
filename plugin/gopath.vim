@@ -5,5 +5,8 @@ func! s:SetGOPATH()
         let $GOPATH = system('gopath')
 endfunc
 
+augroup AutoGoPath
+au!
 au BufEnter *.go call s:SetGOPATH()
+augroup END
 
