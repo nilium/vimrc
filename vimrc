@@ -8,7 +8,7 @@ scriptencoding utf-8
 set encoding=utf-8
 
 " Stick disabled plugins here.
-let g:pathogen_disabled = ["vim-airline","vim-bufferline"]
+let g:pathogen_disabled = ["vim-airline","vim-bufferline","VimCompletesMe"]
 
 " Mark buffers as hidden instead of abandoned
 set hidden
@@ -72,7 +72,9 @@ endif
 " Indentation
 set autoindent
 set smarttab
-" Let the indent plugin handle most of this.
+set expandtab
+"set shiftwidth=8
+"set tabstop=8
 let &listchars='tab:│·,trail:·,extends:→,precedes:←,nbsp:·'
 set nolist
 
@@ -121,6 +123,7 @@ set showtabline=1
 set laststatus=2
 
 " Default formatoptions
+set textwidth=79
 set formatoptions=crqn1
 if has('patch-7.3.541')
 	set formatoptions+=j
@@ -179,10 +182,10 @@ let g:buftabline_numbers = 1
 let g:buftabline_indicators = 1
 
 " ultisnips
-let g:UltiSnipsExpandTrigger = '<Tab>'
-let g:UltiSnipsJumpForwardTrigger = '<Tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
-let g:UltiSnipsListSnippets = '<C-Tab>'
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+let g:UltiSnipsListSnippets = '<C-j>'
 
 let g:UltiSnipsEditSplit = 'context'
 
@@ -206,4 +209,4 @@ set history=1000
 set viminfo=!,\"1000,'100,/1000,@1000,:1000,<1000,h,n~/.vim/viminfo
 set sessionoptions-=options
 
-" vim: set tw=79 ts=8 sw=8 noexpandtab:
+" vim: set ft=vim ts=8 sw=8 tw=79 sts=8 fo=n1jcroql noet sta :
