@@ -19,6 +19,9 @@ nnoremap <Leader><Leader> :nohlsearch<CR>:echo ''<CR>
 " Folding
 nnoremap <silent> <Leader><CR> za
 
+" Window nav
+nnoremap <Leader>w <C-w>
+
 " Leader to comma
 let mapleader = ","
 
