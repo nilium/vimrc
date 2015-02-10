@@ -11,6 +11,7 @@ let mapleader = ' '
 nnoremap <Leader>ko :Unite -start-insert file_rec/async<CR>
 nnoremap <Leader>kf :Unite -start-insert grep<CR>
 nnoremap <Leader>kr :Unite -start-insert register<CR>
+nnoremap <Leader>ks :Unite -start-insert ultisnips<CR>
 nnoremap <Leader>kk :UniteResume<CR>
 nnoremap <Leader>kR <Plug>(unite_restart)
 
