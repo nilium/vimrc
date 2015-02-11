@@ -10,10 +10,6 @@
 	branch = master
 	path = bundle/gundo.vim
 	url = git@github.com:sjl/gundo.vim
-[submodule "bundle/nerdcommenter"]
-	branch = master
-	path = bundle/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter
 [submodule "bundle/syntastic"]
 	branch = master
 	path = bundle/syntastic
