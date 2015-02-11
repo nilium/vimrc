@@ -2,7 +2,7 @@
 " Mappings
 "
 
-set noesckeys
+set esckeys
 
 " Leader to space.
 let mapleader = ' '

@@ -4,6 +4,9 @@ scriptencoding utf-8
 " Settings
 "
 
+" Turn off compatibility with the old vi
+set nocompatible
+
 " Encoding to utf-8.
 set encoding=utf-8
 
@@ -14,8 +17,7 @@ let g:pathogen_disabled = ["vim-airline","vim-bufferline","VimCompletesMe"]
 set hidden
 
 " Timeouts
-set timeout ttimeout timeoutlen=300 ttimeoutlen=0
-set noesckeys
+set timeout ttimeout timeoutlen=300 ttimeoutlen=10
 
 " Persistent undo
 set undofile
@@ -41,9 +43,6 @@ set ruler
 " Programming sanity check
 syntax on
 filetype plugin indent on
-
-" Turn off compatibility with the old vi
-set nocompatible
 
 " Death to the audio bell
 set visualbell
