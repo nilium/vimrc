@@ -2,6 +2,7 @@
 " Mappings
 "
 
+set noesckeys
 
 " Leader to space.
 let mapleader = ' '
@@ -73,16 +74,18 @@ vnoremap <silent> <C-a> g^
 vnoremap <silent> <C-e> g$
 
 " Esc-Motion
-inoremap <silent> <Esc>[D <C-o>b
-inoremap <silent> <Esc>[C <C-o>w
-nnoremap <silent> <Esc>[D b
-nnoremap <silent> <Esc>[C w
-vnoremap <silent> <Esc>[D b
-vnoremap <silent> <Esc>[C e
-nnoremap <silent> <Esc>[1;5D <Plug>CamelCaseMotion_b
-nnoremap <silent> <Esc>[1;5C <Plug>CamelCaseMotion_e
-vnoremap <silent> <Esc>[1;5D <Plug>CamelCaseMotion_b
-vnoremap <silent> <Esc>[1;5C <Plug>CamelCaseMotion_e
+if exists('g:nil_escmotion') && g:nil_escmotion
+	inoremap <silent> <Esc>[D <C-o>b
+	inoremap <silent> <Esc>[C <C-o>w
+	nnoremap <silent> <Esc>[D b
+	nnoremap <silent> <Esc>[C w
+	vnoremap <silent> <Esc>[D b
+	vnoremap <silent> <Esc>[C e
+	nnoremap <silent> <Esc>[1;5D <Plug>CamelCaseMotion_b
+	nnoremap <silent> <Esc>[1;5C <Plug>CamelCaseMotion_e
+	vnoremap <silent> <Esc>[1;5D <Plug>CamelCaseMotion_b
+	vnoremap <silent> <Esc>[1;5C <Plug>CamelCaseMotion_e
+endif
 
 " TagBar
 nmap <silent> <Leader>O :TagbarToggle<CR>
