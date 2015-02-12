@@ -364,7 +364,7 @@ call s:X("WildMenu","f0a0c0","302028","","Magenta","")
 
 call s:X("Folded","a0a8b0","384048","none",s:termBlack,"")
 call s:X("FoldColumn","535D66","1f1f1f","","",s:termBlack)
-call s:X("SignColumn","404040","g:triplejelly_background_color","","",s:termBlack)
+call s:X("SignColumn","404040",g:triplejelly_background_color,"","",s:termBlack)
 call s:X("ColorColumn","","222222","","",s:termBlack)
 
 call s:X("Title","70b950","","none","Green","")
