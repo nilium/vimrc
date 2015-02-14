@@ -74,10 +74,6 @@
 	branch = master
 	path = bundle/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
-[submodule "bundle/nerdtree"]
-	branch = master
-	path = bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
 [submodule "bundle/ack.vim"]
 	branch = master
 	path = bundle/ack.vim
@@ -109,3 +105,6 @@
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git@github.com:tpope/vim-vinegar.git

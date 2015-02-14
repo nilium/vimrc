@@ -24,6 +24,9 @@ nnoremap <silent> <Leader><CR> za
 " Window nav
 nnoremap <Leader>w <C-w>
 
+" Explore
+nnoremap <silent> <Leader>e :Rexplore<CR>
+
 " Leader to comma
 let mapleader = ","
 
@@ -42,7 +45,7 @@ nnoremap <silent> <Leader>sr :set relativenumber!<CR>
 " Will likely remove this once it's muscle memory.
 nnoremap <silent> <Leader>ss :nnoremap <Leader>s<CR>
 nnoremap <silent> <Leader>so :ZoomToggle<CR>
-nnoremap <silent> <Leader>sd :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>sd :Rexplore<CR>
 
 " Display <Leader> mappings
 nnoremap <silent> <Leader><Leader>? :map ,<CR>

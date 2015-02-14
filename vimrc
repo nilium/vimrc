@@ -11,7 +11,7 @@ set nocompatible
 set encoding=utf-8
 
 " Stick disabled plugins here.
-let g:pathogen_disabled = ["vim-airline","vim-bufferline","VimCompletesMe"]
+let g:pathogen_disabled = []
 
 " Mark buffers as hidden instead of abandoned
 set hidden
@@ -160,9 +160,6 @@ so $HOME/.vim/lightline.vim
 if executable('ag')
 	let g:ackprg = 'ag --nogroup --nocolor --column'
 endif
-
-" NERDTree
-let g:NERDTreeWinSize = 44
 
 " buftabline
 let g:buftabline_numbers = 1
