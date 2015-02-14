@@ -176,7 +176,7 @@ let g:UltiSnipsEditSplit = 'context'
 " CtrlP
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules)$',
-  \ 'file': '\v\.(exe|so|dll|a|swp)$',
+  \ 'file': '\v\.(exe|so|dll|a|swp|\.DS_Store)$',
   \ }
 
 " Load mappings
