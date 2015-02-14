@@ -63,6 +63,7 @@ set backspace=indent,eol,start
 set nowrap
 set linebreak
 set display+=lastline
+set colorcolumn=80,120,160
 let &showbreak='↳ '
 if has('patch-7.4.338')
 	set breakindent
