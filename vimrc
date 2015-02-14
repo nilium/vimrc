@@ -156,20 +156,6 @@ let g:yankring_history_dir = '$HOME/.vim'
 " Load lightline configuration
 so $HOME/.vim/lightline.vim
 
-" Pretty braces
-if exists('RainbowParenthesesToggle')
-	au VimEnter * RainbowParenthesesToggle
-	au Syntax * RainbowParenthesesLoadRound
-	" Keep square braces disabled for now -- rarely nested.
-	"au Syntax * RainbowParenthesesLoadSquare
-	au Syntax * RainbowParenthesesLoadBraces
-else " rainbow
-	let g:rainbow_active = 0
-endif
-
-" Indent guides
-let g:indent_guides_enable_on_vim_startup = 1
-
 " ack.vim
 if executable('ag')
 	let g:ackprg = 'ag --nogroup --nocolor --column'

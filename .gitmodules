@@ -1,7 +1,3 @@
-[submodule "bundle/CamelCaseMotion"]
-	branch = master
-	path = bundle/CamelCaseMotion
-	url = git@github.com:bkad/CamelCaseMotion
 [submodule "bundle/ctrlp.vim"]
 	branch = master
 	path = bundle/ctrlp.vim
@@ -74,10 +70,6 @@
 	branch = master
 	path = bundle/asciidoc-vim
 	url = git@github.com:dagwieers/asciidoc-vim
-[submodule "bundle/vim-bufferline"]
-	branch = master
-	path = bundle/vim-bufferline
-	url = git@github.com:bling/vim-bufferline.git
 [submodule "bundle/vim-gitgutter"]
 	branch = master
 	path = bundle/vim-gitgutter
@@ -86,10 +78,6 @@
 	branch = master
 	path = bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "bundle/VimCompletesMe"]
-	branch = master
-	path = bundle/VimCompletesMe
-	url = git@github.com:ajh17/VimCompletesMe.git
 [submodule "bundle/ack.vim"]
 	branch = master
 	path = bundle/ack.vim
@@ -102,10 +90,6 @@
 	branch = master
 	path = bundle/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
-[submodule "bundle/rainbow"]
-	branch = master
-	path = bundle/rainbow
-	url = git@github.com:luochen1990/rainbow.git
 [submodule "bundle/lightline.vim"]
 	branch = master
 	path = bundle/lightline.vim
