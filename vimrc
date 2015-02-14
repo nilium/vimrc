@@ -82,7 +82,7 @@ set number
 set ruler
 
 " Search-related
-set hlsearch
+set nohlsearch
 set incsearch
 
 " Enable the mouse (if supported)
