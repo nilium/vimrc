@@ -111,7 +111,4 @@ nnoremap <silent> <Leader>r :CtrlPTag<CR>
 " Buffer closing
 nnoremap <silent> <Leader>q :Bdelete<CR>
 
-" hdot
-inoremap :hdot ㆍ
-
 " vim: set ft=vim ts=8 sw=8 tw=79 sts=0 fo=croql noet sta :
