@@ -169,7 +169,7 @@ let g:buftabline_indicators = 1
 let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
-let g:UltiSnipsListSnippets = '<C-j>'
+let g:UltiSnipsListSnippets = '<C-x><C-j>'
 
 let g:UltiSnipsEditSplit = 'context'
 
