@@ -191,6 +191,6 @@ au VimEnter source $HOME/.vim/tabular-patterns.vim
 " viminfo / preservatives
 set history=1000
 set viminfo=!,\"1000,'100,/1000,@1000,:1000,<1000,h,n~/.vim/viminfo
-set sessionoptions-=options
+set sessionoptions=buffers,curdir,folds,help,slash,unix,winsize
 
 " vim: set ft=vim ts=8 sw=8 tw=79 sts=8 fo=n1jcroql noet sta :
