@@ -68,14 +68,16 @@ nnoremap <buffer> <silent> <Down> gj
 
 " Imitate Emacs's to-start/end-of-line keys
 " No, I don't care that using C-a and C-e isn't idiomatic vim.
-inoremap <silent> <C-e> <C-o>g$
-inoremap <silent> <C-a> <C-o>g^
-nnoremap <silent> <C-a> g^
-nnoremap <silent> <C-e> g$
-onoremap <silent> <C-a> g^
-onoremap <silent> <C-e> g$
-vnoremap <silent> <C-a> g^
-vnoremap <silent> <C-e> g$
+inoremap <silent> <C-e> <C-o>$
+inoremap <silent> <C-a> <C-o>^
+nnoremap <silent> <C-a> ^
+nnoremap <silent> <C-e> $
+onoremap <silent> <C-a> ^
+onoremap <silent> <C-e> $
+vnoremap <silent> <C-a> ^
+vnoremap <silent> <C-e> $
+
+
 
 " Esc-Motion
 if exists('g:nil_escmotion') && g:nil_escmotion
