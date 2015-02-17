@@ -27,6 +27,13 @@ nnoremap <Leader>w <C-w>
 " Explore
 nnoremap <silent> <Leader>e :Rexplore<CR>
 
+" EasyMotion
+map <Leader><Leader>s    <Plug>(easymotion-s2)
+map <Leader><Leader>f    <Plug>(easymotion-f2)
+map <Leader><Leader>F    <Plug>(easymotion-bd-f2)
+map <Leader><Leader>t    <Plug>(easymotion-t2)
+map <Leader><Leader>T    <Plug>(easymotion-bd-t2)
+
 " Leader to comma
 let mapleader = ","
 
