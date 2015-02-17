@@ -383,7 +383,8 @@ hi! link Conditional Control
 
 call s:X("Identifier",g:triplejelly_c_var,"","","LightCyan","")
 call s:X("Structure",g:triplejelly_c_type,"","","LightMagenta","")
-call s:X("Function",g:triplejelly_c_keyword,"","","LightMagenta","")
+call s:X("Function",g:triplejelly_c_keyword,"","","LightYellow","")
+call s:X("FunctionName",g:triplejelly_c_func_name,"","","LightMagenta","")
 hi! link Statement Control
 call s:X("PreProc","8fbfdc","","","LightBlue","")
 
@@ -532,6 +533,7 @@ hi! link goMethod goFunction
 " Vimscript
 
 hi! link vimOper Normal
+hi! link vimUserFunc FunctionName
 
 " Debugger.vim
 
@@ -575,6 +577,8 @@ if !s:low_color
   hi IndentGuidesOdd ctermbg=234
   hi IndentGuidesEven ctermbg=235
 endif
+
+hi UnderWord term=underline cterm=underline gui=underline
 
 if exists("g:triplejelly_overrides")
   fun! s:load_colors(defs)
