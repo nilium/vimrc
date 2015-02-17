@@ -166,6 +166,11 @@ endif
 let g:buftabline_numbers = 1
 let g:buftabline_indicators = 1
 
+" easymotion
+let g:EasyMotion_keys = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+let g:EasyMotion_grouping = 1
+let g:EasyMotion_use_upper = 1
+
 " ultisnips
 let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
@@ -188,6 +193,8 @@ execute pathogen#infect()
 
 " Load tabular patterns
 au VimEnter source $HOME/.vim/tabular-patterns.vim
+
+let mapleader = ' '
 
 " viminfo / preservatives
 set history=1000
