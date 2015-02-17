@@ -387,6 +387,7 @@ call s:X("Function",g:triplejelly_c_keyword,"","","LightYellow","")
 call s:X("FunctionName",g:triplejelly_c_func_name,"","","LightMagenta","")
 hi! link Statement Control
 call s:X("PreProc","8fbfdc","","","LightBlue","")
+call s:X("StorageClass",g:triplejelly_c_storage,"","","Red","")
 
 call s:X("Operator",g:triplejelly_c_operator,"","","LightBlue","")
 
@@ -426,7 +427,6 @@ hi! link diffAdded DiffAdd
 " PHP
 
 hi! link phpFunctions Function
-call s:X("StorageClass",g:triplejelly_c_storage,"","","Red","")
 hi! link phpSuperglobal Identifier
 hi! link phpQuoteSingle StringDelimiter
 hi! link phpQuoteDouble StringDelimiter
