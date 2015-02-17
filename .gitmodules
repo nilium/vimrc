@@ -108,3 +108,9 @@
 [submodule "bundle/vim-vinegar"]
 	path = bundle/vim-vinegar
 	url = git@github.com:tpope/vim-vinegar.git
+[submodule "bundle/phpcomplete.vim"]
+	path = bundle/phpcomplete.vim
+	url = git@github.com:shawncplus/phpcomplete.vim.git
+[submodule "bundle/php.vim"]
+	path = bundle/php.vim
+	url = git@github.com:StanAngeloff/php.vim.git
