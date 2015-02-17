@@ -3,7 +3,7 @@
 "
 " This function is taken from BenC's answer at on Stack Overflow
 " at <https://stackoverflow.com/a/26551079/457812>.
-" 
+"
 function! s:ZoomToggle() abort
 	if exists('t:zoomed') && t:zoomed
 		execute t:zoom_winrestcmd
@@ -17,5 +17,5 @@ function! s:ZoomToggle() abort
 endfunction
 
 " Expose function as a ZoomToggle command.
-command ZoomToggle call s:ZoomToggle()
+command! ZoomToggle call s:ZoomToggle()
 
