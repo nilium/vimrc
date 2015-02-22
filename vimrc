@@ -50,8 +50,8 @@ set visualbell
 " Split to the right and down
 set splitright splitbelow
 
-" Highlight matching brackets
-set showmatch
+" Don't highlight matching brackets on insert.
+set noshowmatch
 
 " Ignore stuff
 set wildignore=*/node_modules/*,*.so,*.swp,*/.git/*,*.zip,*.dmg,*/*.sparsebundle/*
