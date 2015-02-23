@@ -388,6 +388,7 @@ call s:X("FunctionName",g:triplejelly_c_func_name,"","","LightMagenta","")
 hi! link Statement Control
 call s:X("PreProc","8fbfdc","","","LightBlue","")
 call s:X("StorageClass",g:triplejelly_c_storage,"","","Red","")
+call s:X("MemberAccess", g:triplejelly_c_call, "", "", "LightBlue", "")
 
 call s:X("Operator",g:triplejelly_c_operator,"","","LightBlue","")
 
@@ -423,19 +424,6 @@ call s:X("DiffText","8fbfdc","000000","reverse","Yellow","")
 
 hi! link diffRemoved DiffDelete
 hi! link diffAdded DiffAdd
-
-" PHP
-
-hi! link phpFunctions Function
-hi! link phpSuperglobal Identifier
-hi! link phpQuoteSingle StringDelimiter
-hi! link phpQuoteDouble StringDelimiter
-hi! link phpBoolean Constant
-hi! link phpNull Constant
-hi! link phpArrayPair Operator
-hi! link phpOperator Normal
-hi! link phpRelation Normal
-hi! link phpVarSelector Identifier
 
 " Python
 
@@ -524,11 +512,35 @@ hi! link goFloats goStorage
 hi! link goComplexes goStorage
 
 call s:X("goFunction", g:triplejelly_c_func_name, "", "", "LightMagenta", "")
-call s:X("goType",g:triplejelly_c_storage,"","","LightRed","")
+hi! link goType StorageClass
 hi! link goStructDef goFunction
 hi! link goStruct goFunction
 hi! link goMethod goFunction
 
+" PHP
+
+func! s:OverridePHPSyntax()
+  hi! link phpFunctions Function
+  hi! link phpSuperglobal Constant
+  hi! link phpArrayPair Operator
+
+  hi! link phpType StorageClass
+  hi! link phpFunction FunctionName
+  hi! link phpMethod FunctionName
+
+  hi! link phpVarSelector Identifier
+  hi! link phpMethodsVar MemberAccess
+
+  " Doc tags
+  hi! link phpDocTags Keyword
+  hi! link phpDocParam StorageClass
+  hi! link phpDocIdentifier Identifier
+endfunc
+
+augroup triplejellyPHP
+au!
+au FileType php call <SID>OverridePHPSyntax()
+augroup END
 
 " Vimscript
 
