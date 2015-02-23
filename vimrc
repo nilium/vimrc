@@ -188,6 +188,9 @@ let g:ctrlp_custom_ignore = {
 " Load mappings
 source $HOME/.vim/mappings.vim
 
+" Load man
+runtime ftplugin/man.vim
+
 " Load pathogen
 execute pathogen#infect()
 
