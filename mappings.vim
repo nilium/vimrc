@@ -4,6 +4,20 @@
 
 set esckeys
 
+" Middle mouse
+nnoremap <MiddleMouse> <Esc><LeftMouse>viw
+vnoremap <MiddleMouse> <Esc><LeftMouse>viw
+inoremap <MiddleMouse> <NOP>
+nnoremap <2-MiddleMouse> <Esc><LeftMouse>vaW
+vnoremap <2-MiddleMouse> <Esc><LeftMouse>vaW
+inoremap <2-MiddleMouse> <NOP>
+nnoremap <3-MiddleMouse> <Esc><LeftMouse>vip
+vnoremap <3-MiddleMouse> <Esc><LeftMouse>vip
+inoremap <3-MiddleMouse> <NOP>
+nnoremap <4-MiddleMouse> <NOP>
+vnoremap <4-MiddleMouse> <NOP>
+inoremap <4-MiddleMouse> <NOP>
+
 " Leader to space.
 let mapleader = ' '
 
