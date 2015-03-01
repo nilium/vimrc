@@ -61,7 +61,7 @@
 [submodule "bundle/Smart-Tabs"]
 	branch = master
 	path = bundle/Smart-Tabs
-	url = git@github.com:vim-scripts/Smart-Tabs.git
+	url = git@github.com:nilium/Smart-Tabs.git
 [submodule "bundle/delimitMate"]
 	branch = master
 	path = bundle/delimitMate
