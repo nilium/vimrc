@@ -5,7 +5,9 @@ scriptencoding utf-8
 "
 
 " Turn off compatibility with the old vi
-set nocompatible
+if &compatible
+	set nocompatible
+endif
 
 " Encoding to utf-8.
 set encoding=utf-8
