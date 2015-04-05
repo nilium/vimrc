@@ -98,8 +98,6 @@ onoremap <silent> <C-e> $
 vnoremap <silent> <C-a> ^
 vnoremap <silent> <C-e> $
 
-
-
 " Esc-Motion
 if exists('g:nil_escmotion') && g:nil_escmotion
 	inoremap <silent> <Esc>[D <C-o>b

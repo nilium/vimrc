@@ -154,10 +154,6 @@ let g:go_fmt_command = "goimports"
 " YankRing
 let g:yankring_history_dir = '$HOME/.vim'
 
-" Load airline configuration
-" I don't remember why I had this in a separate file.
-" so $HOME/.vim/airline-conf.vim
-
 " Load lightline configuration
 so $HOME/.vim/lightline.vim
 
@@ -183,23 +179,20 @@ let g:UltiSnipsListSnippets = '<C-x><C-j>'
 
 let g:UltiSnipsEditSplit = 'context'
 
+" SmartIndent (prevent mapping of =)
+let g:ctab_disable_checkalign = 1
+
 " CtrlP
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules)$',
   \ 'file': '\v\.(exe|so|dll|a|swp|\.DS_Store)$',
   \ }
 
-" Load mappings
-source $HOME/.vim/mappings.vim
-
 " Load man
 runtime ftplugin/man.vim
 
 " Load pathogen
 execute pathogen#infect()
-
-" Load tabular patterns
-au VimEnter source $HOME/.vim/tabular-patterns.vim
 
 let mapleader = ' '
 
