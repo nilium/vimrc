@@ -83,6 +83,7 @@ set nolist
 
 " Show line numbers
 set number
+set relativenumber
 set ruler
 
 " Search-related
