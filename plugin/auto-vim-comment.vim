@@ -85,7 +85,6 @@ endfunction
 
 function! VimSettingsLine()
 	return 'set'
-	\       . ' ft=' . &ft
 	\       . ' ts=' . &ts
 	\       . ' sw=' . &sw
 	\       . ' tw=' . &tw
