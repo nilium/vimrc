@@ -111,6 +111,7 @@ if has('cryptv') && v:progname != 'nvim'
 endif
 
 " Colors / UI-specific things
+set clipboard=unnamed
 set lazyredraw
 set wildmenu
 set showcmd
