@@ -4,6 +4,15 @@
 
 set esckeys
 
+" Stamp
+nnoremap S "_diwP
+
+" Window resize
+nnoremap = 5<C-W><
+nnoremap - 5<C-W>>
+nnoremap + 5<C-W>+
+nnoremap _ 5<C-W>-
+
 " Middle mouse
 nnoremap <MiddleMouse> <Esc><LeftMouse>viw
 vnoremap <MiddleMouse> <Esc><LeftMouse>viw
