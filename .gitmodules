@@ -83,3 +83,6 @@
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
+[submodule "bundle/vim-yaml"]
+	path = bundle/vim-yaml
+	url = git://github.com/stephpy/vim-yaml.git
