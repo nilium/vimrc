@@ -38,12 +38,14 @@ let g:proj_window_width = 30
 set scrolloff=3
 set sidescrolloff=5
 
-" Highlight the current line and show the line/col in the status bar.
-set cursorline
+" Show the line/col in the status bar.
 set ruler
 
 " Programming sanity check
 syntax on
+syntax sync minlines=256
+" Over 200 characters long? Something's aready gone wrong.
+set synmaxcol=200
 filetype plugin indent on
 
 " Death to the audio bell
@@ -65,7 +67,6 @@ set backspace=indent,eol,start
 set nowrap
 set linebreak
 set display+=lastline
-set colorcolumn=80,120,160
 let &showbreak='↳ '
 if has('patch-7.4.338')
 	set breakindent
@@ -83,7 +84,6 @@ set nolist
 
 " Show line numbers
 set number
-set relativenumber
 set ruler
 
 " Search-related
@@ -131,7 +131,7 @@ set showtabline=1
 set laststatus=2
 
 " Default formatoptions
-set textwidth=79
+set textwidth=120
 set formatoptions=crqn1
 if has('patch-7.3.541')
 	set formatoptions+=j
@@ -147,7 +147,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
-let g:go_auto_type_info = 1
 
 " Use goimports
 " NOTE: Semi-broken lately, unsure why.
