@@ -117,7 +117,8 @@ set wildmenu
 set showcmd
 set showmode
 set t_Co=256
-colorscheme triplejelly
+" colorscheme triplejelly
+colorscheme summerfruit256
 
 " Set GUI font
 if has('gui_running')
